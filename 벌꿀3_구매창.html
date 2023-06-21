@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .wrap{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: yellow;
+            
+        }
+
+        .item{
+            width: 200px;
+            height: 40px;
+           
+        }
+
+        .item > ul{
+            display: none;
+        }
+
+        .item ul li{
+            padding:5px;
+        }
+
+        .ul li{
+            width: 150px;
+            height: 40px;
+            
+        }
+
+
+        .item:hover ul{
+            display: block;
+            background-color: yellowgreen;
+            text-align: center;
+                     
+        }
+        
+        .menu{
+            display: block;
+            height: 40px;           
+        }
+
+        span{
+            margin-top: 8px;
+            color: black;
+            font-weight: bold;
+            text-align: center;            
+        }
+
+        .img_wrap{ 
+            height: 200px;
+            width: 200px;
+            margin-top: 20px;
+            margin-left: 750px;
+            display: flex;
+            justify-content: center;
+            border:1px solid black;
+        }
+
+        
+
+        .wrap2{
+            width: 500px;
+            padding: 10px;
+            
+            margin: 0 auto;
+            margin-top:70px;
+        }
+        
+        .img-wrap{
+            width: 350px;
+            height: 350px;
+            border: 1px solid black;
+            margin: 0 auto;
+            background-image: url(http://gdimg.gmarket.co.kr/2054029475/still/280?ver=1614948971);
+            background-position: center;
+            background-size: cover;
+            
+        }
+        .goods-info{
+            width: 400px;
+            margin: 0 auto;
+        }
+        .order-info{
+            width: 400px;
+            margin: 0 auto;
+            
+        }
+        input{
+            width: 97%;
+            height: 30px;
+            margin-top: 5px;
+            border-radius: 10px;
+            
+        }
+        button{
+            width: 392px;
+            height: 40px;
+            border-radius: 5px;
+            border: 0px;
+            background-color: yellow;
+            margin-top: 10px;
+            color: black;
+            font-weight: bold;
+            
+            
+            
+            
+        }
+        select{
+            width: 392px;
+            height: 38px;
+            margin: 0 auto;
+            border-radius: 10px;
+            
+        }
+        p{
+            margin-bottom: 0px;
+        }
+
+        
+
+        .footer{                      
+            display: flex;                       
+            margin-top:300px;
+            margin:0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer1{
+            width:400px;           
+                   
+        }
+
+        .footer1 img{
+            width: 280px;        
+            height: 100px;             
+             
+        }
+
+        .footer2{
+            width:710px;            
+            margin-top:30px;
+            color: gray;
+        }
+
+        .footer3{         
+            width:785px;   
+            margin-top:30px;
+            color: gray;
+        }
+
+
+       
+        
+
+        
+    </style>
+</head>
+<body>
+
+    <ul class="wrap">
+        <li class="item"> <span class="menu">로그인</span>
+        <li class="item"> <span class="menu">회원가입</span>
+        <li class="item"> <span class="menu">마이페이지</span>
+            <ul>
+                <li>회원정보수정</li>
+                <li>배송지관리</li>
+            </ul>   
+        </li>       
+        <li class="item"> <span class="menu">1:1문의</span>
+        <li class="item"> <span class="menu">주문조회</span>
+            <ul>
+                <li>회원주문조회</li>
+                <li>비회원주문조회</li>
+            </ul> 
+        </li>
+
+        <li class="item"> <span class="menu">사용후기</span>
+        <li class="item"> <span class="menu">장바구니</span>
+    </ul>
+            
+    <div class="wrap2">
+        <div class="img-wrap"></div>
+        <div class="goods-info">
+            <h1>지리산 명품 자연산 벌꿀 고급 토종꿀 1.2kg</h1>
+            <p>원산지 : 국산</p>
+            <p>가격 : 50000원</p>
+        </div>
+
+        <div class="order-info"> 
+            
+            <p>수량</p>
+            <select>
+                <option>수량을 선택하세요</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <p>종류</p>
+            <input type="text" list="choice" placeholder="종류를 선택하세요">  
+        <datalist id="choice">
+            <option value="유채꿀"></option>
+            <option value="아카시아꿀"></option>
+            <option value="밤꿀"></option>
+            <option value="잡화꿀"></option>
+            <option value="싸리꿀"></option>
+        </datalist>
+            <p>금액</p>
+            <input type="text">
+            
+            <button>주문</button>
+        </div>
+    </div>  
+
+    <div class="footer"> 
+
+        <div class="footer1">
+            <img src="https://www.korapis.or.kr/images/footer_logo.png">
+        </div>
+            
+            
+        <div class="footer2">
+            <strong>사업자등록번호</strong> 203-82-32164(본사) ㅣ 139-82-01832(경제사업부) ㅣ 558-82-00295(구매사업단) <br>
+            <strong>사업장 소재지[본점]</strong> 04589 서울특별시 중구 다산로 178 한국양봉농협 본점 <br>
+            <strong>사업장 소재지[경재사업부]</strong> 17598 경기도 안성시 미양면 이박골길 75-10 한국양봉농협경제사업부 <br>
+            <strong>사업장 소재지[구매사업단]17600 경기도 안성시 미양면 안성맞춤대로 586</strong> <br>
+        </div> 
+          
+
+            
+        <div class="footer3">
+            <strong>대표자</strong> 김용래 ㅣ <strong>통신판매업신고</strong> 제2009-경기안성-0120 <br>
+            <strong>개인정보관리책임자</strong> 김기동 (nh170383-1@nonghyup.com) <br>
+            <strong>대표전화</strong>02-2231-9856(본점) ㅣ 031-671-5000(경제사업부)ㅣ 031-671-5009(구매사업단) <br> 
+            <strong>팩스</strong>031-671-6880(경제사업부) <br>
+            Copyright © 한국양봉농협 <br>
+        </div>
+        
+
+    </div>    
+
+   
+        
+        
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .wrap{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: yellow;
+        }
+
+        .item{
+            width: 200px;
+            height: 40px;
+           
+        }
+
+        .item > ul{
+            display: none;
+        }
+
+        .item ul li{
+            padding:5px;
+        }
+
+        .ul li{
+            width: 150px;
+            height: 40px;
+            
+        }
+
+
+        .item:hover ul{
+            display: block;
+            background-color: yellowgreen;
+            text-align: center;
+                     
+        }
+
+        .menu{
+            height: 40px;
+            display: block;          
+        }
+
+        span{
+            margin-top: 8px;
+            font-weight: bold;
+            text-align: center;
+            color: black;
+        }
+        
+
+        table{
+          width: 800px;
+          border: 1px solid  black;
+          text-align: center;
+          border-collapse: collapse;
+          margin:0 auto;
+          margin-top: 100px;
+        }
+
+        h1{
+            margin-top:50px;
+            font-weight: lighter;
+        }
+
+        p{
+            margin-top:30px;
+            color: gray;
+        }
+
+        
+        thead td{
+          width: 100px;
+          font-weight: bold;
+          color: black;
+          padding:10px;
+          background-color: gainsboro;
+          
+        }
+
+        td{
+            border: 1px solid black;
+            width: 100px;
+            border: 1px solid gray;
+        }
+
+        tr{
+            border: 1px solid gray;
+            color: gray;
+        }
+
+        .footer{                      
+            display: flex;                       
+            margin-top:300px;
+            
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer1{
+            width:400px;           
+                   
+        }
+
+        .footer1 img{
+            width: 280px;        
+            height: 100px;             
+             
+        }
+
+        .footer2{
+            width:710px;            
+            margin-top:30px;
+            color: gray;
+        }
+
+        .footer3{         
+            width:785px;   
+            margin-top:30px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <ul class="wrap"> 
+        <li class="item"> <span class="menu"> 로그인 </span> 
+        <li class="item"> <span class="menu"> 회원가입 </span> 
+        <li class="item"> <span class="menu"> 마이페이지 </span>
+            <ul>
+                <li>회원정보수정</li>
+                <li>배송지관리</li>
+            </ul>
+        <li class="item"> <span class="menu"> 1:1 문의 </span>
+        <li class="item"> <span class="menu"> 주문조회 </span>
+            <ul>
+                <li>회원주문조회</li>
+                <li>비회원주문조회</li>
+            </ul>
+        <li class="item"> <span class="menu"> 사용후기 </span>
+        <li class="item"> <span class="menu"> 장바구니 </span>
+    </ul>
+
+    <caption><h1>"벌꿀의 종류"</h1></caption>
+
+    <table> 
+        <p>꿀에는 <mark>벌꿀(자연꿀)</mark>과 <mark>당밀(인공꿀)</mark>이 있다. <br>
+            벌꿀은 오랜 옛날에 자연에서 얻은 인류 최초의 식품으로 그리스 제신(諸神)들의 식량이었다고 하며, 로마인은 꿀을 하늘에서 내리는 이슬로 여겼다고 한다. <br>
+            그후 인류사회에서 꿀을 약용으로 하는 한편 사체(死體)의 방부제, 미라 제작, 과실의 보존 등에 사용하여 왔다.<br>
+            한국에서도 오랜 옛날부터 벌꿀을 채집하여 귀한 약품 및 식품으로 사용하여 왔다. <br>
+            최근에는 야생벌의 수효가 격감됨에 따라 꿀이 매우 귀해진 반면에 인공적으로 벌을 길러 꿀을 채집하는 양봉업이 발달되어 이른봄∼늦가을까지, 남쪽은 제주도에서 북쪽은 강원도에 이르기까지 벌통을 차에 싣고 꽃을 찾아 이곳저곳 옮겨다니며 꿀을 생산하는데, 이 꿀은 야생벌의 꿀보다 당분과 질이 떨어진다.</p>
+        <thead>
+            <tr>
+                <td>종류</td>
+                <td>색</td>
+                <td>맛과향</td>
+                <td>품질(외관)</td>
+                <td>생산지역 및 시기</td>
+            </tr>
+        </thead>
+
+        <tr>
+            <td>유채꿀</td>
+            <td>유백색</td>
+            <td>감미롭고 풀냄새</td>
+            <td>생산 일주일 후부터 굳어진 상태로 있음</td>
+            <td>제주도, 남부지방 4월 초순~5월초</td>
+        </tr>
+
+        <tr>
+            <td>아카시아꿀</td>
+            <td>백황색</td>
+            <td>감미롭고 아카시아향</td>
+            <td>점조성 액상이며 시일이 경과하면 미량 결정되는 경우가 있음</td>
+            <td>전국적으로 생산가능 5월 중순</td>
+        </tr>
+
+        <tr>
+            <td>밤꿀</td>
+            <td>흙갈색</td>
+            <td>맛이 쓰고 밤꽃 냄새</td>
+            <td>점조성액으로 그대로 유지됨</td>
+            <td>영, 호남,경기도 등 전국일원 6월 중순</td>
+        </tr>
+
+        <tr>
+            <td>잡화꿀</td>
+            <td>황갈색</td>
+            <td>감미롭고 향기가 있음</td>
+            <td>생산시 점조성 액상으로 유지하다가 낮은 기온이 되면 일부가 굳어짐</td>
+            <td>전국일원 5월~9월</td>
+        </tr>
+
+        <tr>
+            <td>싸리꿀</td>
+            <td>백황색</td>
+            <td>감미롭고 약간 신미</td>
+            <td>15°C 이하가 되면 대체로 굳어져있음</td>
+            <td>전국각지, 산간지방에서 채밀, 8월 중순</td>
+        </tr>
+    </table>
+
+    <div class="footer"> 
+
+        <div class="footer1">
+            <img src="https://www.korapis.or.kr/images/footer_logo.png">
+        </div>
+            
+            
+        <div class="footer2">
+            <strong>사업자등록번호</strong> 203-82-32164(본사) ㅣ 139-82-01832(경제사업부) ㅣ 558-82-00295(구매사업단) <br>
+            <strong>사업장 소재지[본점]</strong> 04589 서울특별시 중구 다산로 178 한국양봉농협 본점 <br>
+            <strong>사업장 소재지[경재사업부]</strong> 17598 경기도 안성시 미양면 이박골길 75-10 한국양봉농협경제사업부 <br>
+            <strong>사업장 소재지[구매사업단]17600 경기도 안성시 미양면 안성맞춤대로 586</strong> <br>
+        </div> 
+          
+
+            
+        <div class="footer3">
+            <strong>대표자</strong> 김용래 ㅣ <strong>통신판매업신고</strong> 제2009-경기안성-0120 <br>
+            <strong>개인정보관리책임자</strong> 김기동 (nh170383-1@nonghyup.com) <br>
+            <strong>대표전화</strong>02-2231-9856(본점) ㅣ 031-671-5000(경제사업부)ㅣ 031-671-5009(구매사업단) <br> 
+            <strong>팩스</strong>031-671-6880(경제사업부) <br>
+            Copyright © 한국양봉농협 <br>
+        </div>
+        
+
+    </div>    
+</body>
+</html>

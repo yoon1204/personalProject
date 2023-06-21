@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .wrap{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: yellow;
+        }
+
+        .item{
+            width: 200px;
+            height: 40px;
+            
+        }
+
+        .item > ul{
+            display: none;
+        }
+
+        .item ul li{
+            padding:5px;
+        }
+
+        .ul li{
+            width: 150px;
+            height: 40px;
+            
+        }
+
+        .item:hover ul{
+            display: block;
+            text-align: center;
+            background-color: yellowgreen;
+        }
+
+        .menu{
+            height: 40px;
+            display: block;          
+        }
+
+        span{
+            margin-top: 8px;
+            font-weight: bold;
+            text-align: center;
+            color: black;
+        }
+
+        .login_wrap{
+            width: 500px;
+            height: 650px;
+            border: 1px solid black;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .img_wrap{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+            margin-left:40px;
+            margin-top:40px;
+        }
+
+        .info_wrap{
+            width: 400px;
+            height: 200px;
+            border:1px solid black;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        input{
+            width: 350px;
+            height: 40px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border-color: skyblue;
+        }
+
+        button{
+            width: 355px;
+            height: 40px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: skyblue;
+        }
+
+        .footer{                      
+            display: flex;                       
+            margin-top:300px;
+            
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer1{
+            width:400px;           
+                   
+        }
+
+        .footer1 img{
+            width: 280px;        
+            height: 100px;             
+             
+        }
+
+        .footer2{
+            width:710px;            
+            margin-top:30px;
+            color: gray;
+        }
+
+        .footer3{         
+            width:785px;   
+            margin-top:30px;
+            color: gray;
+        }
+
+
+       
+        
+
+    </style>
+</head>
+<body>
+    <ul class="wrap"> 
+        <li class="item"> <span class="menu"> 로그인 </span> 
+        <li class="item"> <span class="menu"> 회원가입 </span> 
+        <li class="item"> <span class="menu"> 마이페이지 </span>
+            <ul>
+                <li>회원정보수정</li>
+                <li>배송지관리</li>
+            </ul>
+        <li class="item"> <span class="menu"> 1:1 문의 </span>
+        <li class="item"> <span class="menu"> 주문조회 </span>
+            <ul>
+                <li>회원주문조회</li>
+                <li>비회원주문조회</li>
+            </ul>
+        <li class="item"> <span class="menu"> 사용후기 </span>
+        <li class="item"> <span class="menu"> 장바구니 </span>
+    </ul>
+
+    <div class="login_wrap">
+        <div class="img_wrap">
+            <img src="https://i.pinimg.com/originals/e6/51/27/e65127ada51fa608952d80e6e66c6ebd.jpg">
+        </div>
+        <div class="info_wrap">
+            <input type="text" placeholder="아이디를 입력하세요.">
+            <input type="text" placeholder="비밀번호를 입력하세요.">
+            <button>LOGIN</button>
+        </div>
+    </div>
+
+    <div class="footer"> 
+
+        <div class="footer1">
+            <img src="https://www.korapis.or.kr/images/footer_logo.png">
+        </div>
+            
+            
+        <div class="footer2">
+            <strong>사업자등록번호</strong> 203-82-32164(본사) ㅣ 139-82-01832(경제사업부) ㅣ 558-82-00295(구매사업단) <br>
+            <strong>사업장 소재지[본점]</strong> 04589 서울특별시 중구 다산로 178 한국양봉농협 본점 <br>
+            <strong>사업장 소재지[경재사업부]</strong> 17598 경기도 안성시 미양면 이박골길 75-10 한국양봉농협경제사업부 <br>
+            <strong>사업장 소재지[구매사업단]17600 경기도 안성시 미양면 안성맞춤대로 586</strong> <br>
+        </div> 
+          
+
+            
+        <div class="footer3">
+            <strong>대표자</strong> 김용래 ㅣ <strong>통신판매업신고</strong> 제2009-경기안성-0120 <br>
+            <strong>개인정보관리책임자</strong> 김기동 (nh170383-1@nonghyup.com) <br>
+            <strong>대표전화</strong>02-2231-9856(본점) ㅣ 031-671-5000(경제사업부)ㅣ 031-671-5009(구매사업단) <br> 
+            <strong>팩스</strong>031-671-6880(경제사업부) <br>
+            Copyright © 한국양봉농협 <br>
+        </div>
+        
+
+    </div>    
+</body>
+</html>

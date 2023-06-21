@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .wrap{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: yellow;
+        }
+
+        .item{
+            width: 200px;
+            height: 40px;
+            
+        }
+
+        .item > ul{
+            display: none;
+        }
+
+        .item ul li{
+            padding:5px;
+        }
+
+        .ul li{
+            width: 150px;
+            height: 40px;
+            
+        }
+
+        .item:hover ul{
+            display: block;
+            text-align: center;
+            background-color: yellowgreen;
+            
+                     
+        }
+
+        .menu{
+            display: block;
+            height: 40px;           
+        }
+
+        span{
+            margin-top: 8px;
+            color: black;
+            font-weight: bold;
+            text-align: center;            
+        }
+
+        .img_wrap{ 
+            height: 200px;
+            width: 200px;
+            margin-top: 20px;
+            margin-left: 900px;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .field{
+            margin-left:300px;
+            margin-top:10px;
+            position: relative;
+        }
+
+        fieldset{
+            height: 60px;
+            width: 150px;          
+            color: red;
+            border-color:red;
+            text-align: center; 
+            font-weight: bold;
+            display: block;
+        }
+
+        
+
+        .header{
+            height: 200px;
+            position: relative;
+        }
+        .search-wrap{
+            height: 50px;
+            width: 500px;
+            position: absolute;
+            right: 0px;         
+            margin-top: -250px;
+            margin-right:200px;
+            
+        }
+        .bar{ 
+        width: 300px;
+        height: 40px;         
+        border:1px solid black;
+        border-color: yellowgreen;
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 200px;
+        }
+
+        .bar img{
+            width: 40px;
+            height: 40px;
+        }   
+        .txt{
+            width:210px;
+            height: 35px;
+            border: 0px;     
+            outline: 0px;    
+        }
+        .btn{
+            width: 50px;
+            height: 40px;       
+        }
+        .btn img{
+            width: 40px;
+            height: 40px;
+        }
+
+        .honey{
+            width: 910px;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+
+        .honey li{
+            width: 300px;
+            height: 300px;
+            
+        }
+
+        .honey img{
+            width: 250px;
+            height: 250px;
+           
+        }
+
+        .honey p{
+            font-size: 12px;
+            text-align: center;
+           
+        }
+
+        .footer{                      
+            display: flex;                       
+            margin-top:300px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .footer1{
+            width:400px;           
+                   
+        }
+
+        .footer1 img{
+            width: 280px;        
+            height: 100px;             
+             
+        }
+
+        .footer2{
+            width:710px;            
+            margin-top:30px;
+            color: gray;
+        }
+
+        .footer3{         
+            width:785px;   
+            margin-top:30px;
+            color: gray;
+        }
+
+
+       
+    </style>  
+</head>
+<body>   
+    <ul class="wrap">
+        <li class="item"> <span class="menu">로그인</span>   
+        <li class="item"> <span class="menu">회원가입</span>   
+        <li class="item"> <span class="menu">마이페이지</span>
+            <ul>
+                <li>회원정보수정</li>
+                <li>배송지관리</li>
+            </ul>
+        </li>      
+        <li class="item"> <span class="menu">1:1문의</span>
+        <li class="item"> <span class="menu">주문조회</span> 
+            <ul>
+                <li>회원주문조회</li>
+                <li>비회원주문조회</li>
+            </ul> 
+        <li class="item"> <span class="menu">사용후기</span>
+        <li class="item"> <span class="menu">장바구니</span>
+    </ul>
+
+    <div class="field">
+        <fieldset>
+            <legend>100% 국내산</legend>
+            <label for="flower">천연꿀만 취급합니다</label>
+        </fieldset>
+    </div>
+
+        <div class="img_wrap">
+            <img src="https://i.pinimg.com/originals/e6/51/27/e65127ada51fa608952d80e6e66c6ebd.jpg">            
+        </div>
+
+     <div class="header">
+        <!-- 검색바  영역-->
+        <div class="search-wrap">
+
+            <!-- 검색바-->
+            <div class="bar">
+                <img src="https://i.pinimg.com/474x/e6/51/27/e65127ada51fa608952d80e6e66c6ebd.jpg">
+                <input type="text" class="txt">
+                <div class="btn"> 
+                    <img src="https://media.istockphoto.com/vectors/magnifier-glass-icon-search-symbol-vector-illustration-vector-id524896818?k=6&m=524896818&s=170667a&w=0&h=VQIPrwiu8e2ch8p54TW-ZhUMLp5glos_U4_KgMzcEOg=">    
+                </div>
+            </div>
+        
+            
+           
+        </div>
+        </div>
+    </div>   
+    
+    <ul class="honey">
+        <li>
+            <img src="https://gdimg.gmarket.co.kr/1860102671/still/280?ver=1628043951">
+            <p>가격: 28950원</p>
+            <p>국내산 아카시아꿀</p>
+        </li>
+        <li>
+            <img src="https://gdimg.gmarket.co.kr/1975777948/still/280?ver=1686284419">
+            <p>가격: 75000원</p>
+            <p>진해양봉 천연벌꿀</p>
+        </li>
+        <li>
+            <img src="https://gdimg.gmarket.co.kr/2457364659/still/280?ver=1686903383">
+            <p>가격: 28950원</p>
+            <p>국내산 잡화꿀</p>
+        </li>
+        <li>
+            <img src="https://gdimg.gmarket.co.kr/2633546413/still/280?ver=1666859098">
+            <p>가격: 26820원</p>
+            <p>100% 천연 꿀</p>
+        </li>
+        <li>
+            <img src="https://gdimg.gmarket.co.kr/681524167/still/280?ver=1658812889">
+            <p>가격: 50000원</p>
+            <p>명품 자연산 고급 토종꿀</p>
+        </li>
+        <li>
+            <img src="https://gdimg.gmarket.co.kr/2645113709/still/280?ver=1687112750">
+            <p>가격: 90000원</p>
+            <p>지리산 명품 자연산 벌꿀</p>
+        </li>
+        <li>
+            <img src="https://gdimg.gmarket.co.kr/2054029475/still/280?ver=1614948971">
+            <p>가격: 70000원</p>
+            <p>국내산 천연벌꿀</p>
+        </li>
+        <li>
+            <img src="https://gdimg.gmarket.co.kr/2054290834/still/280?ver=1614947943">
+            <p>가격: 54000원</p>
+            <p>100% 자연숙성 아카시아 꿀</p>
+        </li>    
+    </ul>
+
+    <div class="footer"> 
+
+        <div class="footer1">
+            <img src="https://www.korapis.or.kr/images/footer_logo.png">
+        </div>
+            
+            
+        <div class="footer2">
+            <strong>사업자등록번호</strong> 203-82-32164(본사) ㅣ 139-82-01832(경제사업부) ㅣ 558-82-00295(구매사업단) <br>
+            <strong>사업장 소재지[본점]</strong> 04589 서울특별시 중구 다산로 178 한국양봉농협 본점 <br>
+            <strong>사업장 소재지[경재사업부]</strong> 17598 경기도 안성시 미양면 이박골길 75-10 한국양봉농협경제사업부 <br>
+            <strong>사업장 소재지[구매사업단]17600 경기도 안성시 미양면 안성맞춤대로 586</strong> <br>
+        </div> 
+          
+
+            
+        <div class="footer3">
+            <strong>대표자</strong> 김용래 ㅣ <strong>통신판매업신고</strong> 제2009-경기안성-0120 <br>
+            <strong>개인정보관리책임자</strong> 김기동 (nh170383-1@nonghyup.com) <br>
+            <strong>대표전화</strong>02-2231-9856(본점) ㅣ 031-671-5000(경제사업부)ㅣ 031-671-5009(구매사업단) <br> 
+            <strong>팩스</strong>031-671-6880(경제사업부) <br>
+            Copyright © 한국양봉농협 <br>
+        </div>
+        
+
+    </div>    
+</body>
+</html>
